@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="6dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="6dp" >
+
+    <com.hyc.androidcore.views.AsyncImageView
+        android:id="@+id/item_pic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/gold"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="88dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="2015年第13届国际软件设计大会"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/item_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_name"
+        android:layout_marginLeft="88dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="世纪新城会议中心"
+        android:textColor="@color/gray"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_address"
+        android:layout_marginLeft="88dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="2015年6月20日到2015年7月15日"
+        android:textColor="@color/gray"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/item_flag"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/jiangkaishi"
+        android:gravity="center"
+        android:text="将开始"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+</RelativeLayout>

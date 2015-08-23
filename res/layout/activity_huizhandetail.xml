@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_title" />
+
+    <ScrollView
+        android:id="@+id/item_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.hyc.androidcore.views.AsyncImageView
+                android:id="@+id/item_pic"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_margin="8dp"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center_vertical"
+                android:background="#9f9f9f" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/item_zhinan1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/zhinan1" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="参展指南"
+                        android:textColor="#9f9f9f"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_zhinan2"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:background="#9f9f9f" />
+
+                    <ImageView
+                        android:id="@+id/item_zhinan2_pic"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/zhinan2" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/item_zhinan2_pic"
+                        android:gravity="center_horizontal"
+                        android:text="出行指南"
+                        android:textColor="#9f9f9f"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="#9f9f9f" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_zhinan3"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/item_zhinan3_pic"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/zhinan3" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/item_zhinan3_pic"
+                        android:gravity="center_horizontal"
+                        android:text="展会资讯"
+                        android:textColor="#9f9f9f"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="#9f9f9f" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/item_zhinan4"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/zhinan1" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="观展指南"
+                        android:textColor="#9f9f9f"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center_vertical"
+                android:background="#9f9f9f" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/item_zhinan5"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/zhinan5" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="展会介绍"
+                        android:textColor="#9f9f9f"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_zhinan6"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:background="#9f9f9f" />
+
+                    <ImageView
+                        android:id="@+id/item_zhinan6_pic"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/zhinan6" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/item_zhinan6_pic"
+                        android:gravity="center_horizontal"
+                        android:text="主办信息"
+                        android:textColor="#9f9f9f"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="#9f9f9f" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_zhinan7"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/item_zhinan7_pic"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/zhinan7" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/item_zhinan7_pic"
+                        android:gravity="center_horizontal"
+                        android:text="展馆介绍"
+                        android:textColor="#9f9f9f"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="#9f9f9f" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/item_zhinan8"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/zhinan8" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="行业资讯"
+                        android:textColor="#9f9f9f"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center_vertical"
+                android:background="#9f9f9f" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="会展"
+                    android:textColor="#9f9f9f"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#9f9f9f" />
+
+                <TextView
+                    android:id="@+id/huizhan_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center_vertical"
+                    android:text="2015年第四届国家茶业博览会"
+                    android:textColor="#e0000000"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#9f9f9f" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="展馆"
+                    android:textColor="#9f9f9f"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#9f9f9f" />
+
+                <TextView
+                    android:id="@+id/huizhan_zhanguan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center_vertical"
+                    android:text="2015年第四届国家茶业博览会"
+                    android:textColor="#e0000000"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-30dp"
+                    android:layout_marginRight="0dp"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#9f9f9f" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="地址"
+                    android:textColor="#9f9f9f"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#9f9f9f" />
+
+                <TextView
+                    android:id="@+id/huizhan_dizhi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center_vertical"
+                    android:text="2015年第四届国家茶业博览会"
+                    android:textColor="#e0000000"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-30dp"
+                    android:layout_marginRight="0dp"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#9f9f9f" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="时间"
+                    android:textColor="#9f9f9f"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#9f9f9f" />
+
+                <TextView
+                    android:id="@+id/huizhan_shijian"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="50dp"
+                    android:gravity="center_vertical"
+                    android:text="2015年第四届国家茶业博览会"
+                    android:textColor="#e0000000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/item_flag"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-50dp"
+                    android:background="@drawable/jiangkaishi"
+                    android:gravity="center"
+                    android:text="将开始"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/item_pinlunFlag"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="12dp"
+                    android:drawableRight="@drawable/arrow_down"
+                    android:text="                       " />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#9f9f9f" />
+
+            <LinearLayout
+                android:id="@+id/item_fapinlun"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/item_pinluntext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="70dp"
+                    android:background="@drawable/crilte_white"
+                    android:cursorVisible="true"
+                    android:gravity="center_vertical"
+                    android:hint="请输入评论"
+                    android:maxLength="100"
+                    android:padding="4dp"
+                    android:textColor="@color/comm_dark_gray"
+                    android:textCursorDrawable="@drawable/visible_style"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/item_pinlunButton"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="-64dp"
+                    android:background="@drawable/crilte_orange"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="发布"
+                    android:textColor="@color/comm_white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/item_pinlunList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="16dp"
+                android:cacheColorHint="#0000"
+                android:divider="@color/comm_gary_6"
+                android:dividerHeight="0.2dp"
+                android:listSelector="#00000000"
+                android:overScrollMode="never"
+                android:scrollbars="none" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/item_more"
+                android:layout_width="120dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/crilte_white"
+                android:gravity="center"
+                android:text="获取评论"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cdhz.cdhz_1"
+    android:versionCode="1"
+    android:versionName="@string/app_version" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+      <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+ 
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    
+    <application
+        android:name="com.cdhz.cdhz_1.APP"
+        android:allowBackup="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/Transparent" >
+          <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="da863a49854c31221379bb032564cc4b" />
+        <activity
+            android:name=".StartAPP"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cdhz.cdhz_1.Main"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="main"></action>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.cdhz.cdhz_1.AboutActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="about"></action>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cdhz.cdhz_1.ZhanGuanDetailActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="zhanguandetail"></action>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.cdhz.cdhz_1.MapActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="map"></action>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name="com.cdhz.cdhz_1.HuiZhanDetailActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="huizhandetail"></action>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cdhz.cdhz_1.DescWebActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="webdesc"></action>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cdhz.cdhz_1.ZiXunActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="zixun"></action>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cdhz.cdhz_1.ChuXinZhiNanActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="chuxin"></action>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.cdhz.cdhz_1.ShareActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="share"></action>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.cdhz.cdhz_1.RegisterActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="register"></action>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.cdhz.cdhz_1.LoginActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="login"></action>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.cdhz.cdhz_1.UserInfoActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="userinfo"></action>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.cdhz.cdhz_1.SearchZhanhuiActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="huizhanSearch"></action>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+          <activity
+            android:name="com.cdhz.cdhz_1.UpdateAPKActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="updateAPP"></action>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name="com.cdhz.cdhz_1.NianZhanActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="nianzhanplan"></action>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+          
+         
+    </application>
+
+</manifest>

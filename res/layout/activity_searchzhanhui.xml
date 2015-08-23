@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:background="#448dda"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="12dp"
+        android:paddingTop="6dp" >
+
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/back" />
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:background="@drawable/crilte_white"
+            android:gravity="center_vertical"
+            android:hint="请输入搜索关键字"
+            android:maxLength="16"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/right"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-40dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/search_bar" />
+    </LinearLayout>
+
+    <com.cdhz.cdhz_1.views.RefreshListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#0000"
+        android:divider="@color/comm_gary_6"
+        android:dividerHeight="0.2dp"
+        android:listSelector="@color/comm_bg"
+        android:overScrollMode="never" >
+    </com.cdhz.cdhz_1.views.RefreshListView>
+
+</LinearLayout>

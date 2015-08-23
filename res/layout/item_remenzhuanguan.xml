@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:orientation="vertical" >
+
+    <com.hyc.androidcore.views.AsyncImageView
+        android:id="@+id/item_pic"
+        android:scaleType="centerCrop"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:textColor="#696969"
+        android:textSize="15sp" />
+
+</LinearLayout>
